@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Celebrity Dating</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/bootstrap-theme.css">
+      <link rel="stylesheet" href="css/styles.css">
+      <script src="js/jQuery-1.12.0.js" ></script>
+      <script type="text/javascript" src="js/bootstrap.js" ></script>
+      <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Which Celebrity should you date?</h1>
+        <p>Tell us a little about yourself first:</p>
+      <form id="profile" role="form">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="age">Age</label>
+                <input id="age" type="number" class="form-control">
+            </div>
+
+            <div class="form-group">
+              <label for="gender">How do you feel about guns?</label>
+                <select class="form-control" id="gender">
+                  <option value="female">Female</option>
+                  <option value="male">Male</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+              <label for="hobby">Favorite Hobby:</label>
+                <input class="form-control" id="hobby" type="text">
+            </div>
+            <div class="form-group">
+              <label for="firstDate">
+                Where would you go for a first date?
+              </label>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optradio" id="movies">Movies
+                    </label>
+                  </div>
+
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optradio" id="restaruant">Restaruant
+                    </label>
+                  </div>
+
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optradio" id="beach">Beach
+                    </label>
+                  </div>
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="optradio" id="concert">Concert
+                    </label>
+                  </div>
+                </div>
+          </div>
+        </div>
+      <button type="submit" class="btn btn-primary">
+        Who should you date?
+      </button>
+
+    </form>
+    <br>
+    <div id="result">
+      <p>You get to date <span id="dateResult"></span>. That sounds exciting...have fun!</p>
+    </div>
+ </body>
+</html>
